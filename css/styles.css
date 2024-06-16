@@ -46,6 +46,19 @@ img {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .container {
+    padding: 0 16px;
+    max-width: 768px;
+    margin: 0 auto;
+  }
+}
+
 /* .container {
   padding: 0 15px;
   max-width: 1158px;
@@ -158,6 +171,83 @@ img {
 .header-contacts-link:hover,
 .header-contacts-link:focus {
   color: #404bbf;
+}
+/* --------------------mobile-menu */
+.backdrop-mobile-menu {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 100%;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0 16px;
+  /* opacity: 1;
+  visibility: hidden;
+  pointer-events: none; */
+}
+.mobile-nav {
+  margin-top: 72px;
+  margin-bottom: 168px;
+}
+.mobile-list {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 111%;
+  letter-spacing: 0.02em;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.mobile-link {
+  /* text-decoration: none; */
+  color: var(--navy-blue);
+}
+
+.mobile-contacts {
+  margin-bottom: 48px;
+}
+.mobile-contacts-list {
+  flex-direction: column;
+  gap: 24px;
+}
+.mobile-contacts-link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  color: var(--iris);
+  font-style: normal;
+}
+
+.mobile-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-btn:focus {
+  background-color: #404bbf;
+  border: none;
+  fill: #ffffff;
+}
+.mobile-btn.checkbox-input:checked {
+  background-color: #404bbf;
+  border: none;
+  color: #ffffff;
 }
 
 /* Section 1 main ------------------------------------------------------------------------------------------------------------------------------*/
@@ -626,8 +716,8 @@ img {
 }
 .modal {
   position: absolute;
-  width: 408px;
-  min-height: 584px;
+  width: 288px;
+  /* min-height: 584px; */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -768,6 +858,7 @@ img {
 }
 
 .label-checkbox {
+  display: flex;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -779,7 +870,8 @@ img {
 }
 .modal-span {
   margin-right: 8px;
-  width: 16px;
+  margin-top: 8px;
+  min-width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
