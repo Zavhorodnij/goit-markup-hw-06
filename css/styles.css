@@ -626,20 +626,33 @@ img {
 /* footer *************************************/
 
 .footer {
+  display: flex;
+  justify-content: center;
   background-color: #2e2f42;
-  padding: 96px 0;
-  /* padding: 100px; */
+  padding: 100px 0;
+}
+@media screen and (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    margin-left: 92px;
+  }
 }
 .footer-container {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
+  /* column-gap: 24px; */
+  /* margin-left: 92px; */
   /* align-items: baseline; */
+  margin-bottom: 72px;
 }
 
 .footer-div {
   /* margin-right: 120px; */
-  text-align: center;
-  margin-bottom: 72px;
+  /* text-align: center; */
+  /* margin-bottom: 72px; */
 }
 .footer-logo {
   font-family: "Raleway", sans-serif;
@@ -680,9 +693,9 @@ img {
   display: flex;
 }
 
-.container footer {
+/* .container footer {
   margin-right: 120px;
-}
+} */
 
 .footer-logo-span {
   color: #f4f4fd;
@@ -695,23 +708,30 @@ img {
   background-color: #31d0aa;
 }
 
+.container-btn {
+  display: flex;
+  flex-direction: column;
+}
 @media screen and (min-width: 768px) {
-  .footer-div {
-    display: flex;
-    flex-direction: row;
-    gap: 72px 24px;
+  .container-btn {
+    align-items: start;
   }
 }
 
-/* ------------ Subscribe-------------*/
 .title-input-email {
   text-align: center;
+  /* margin-bottom: 16px; */
 }
 
 .form-for-footer {
   display: flex;
   flex-direction: column;
   gap: 24px;
+}
+@media screen and (min-width: 768px) {
+  .form-for-footer {
+    flex-direction: row;
+  }
 }
 .label-footer {
   text-align: center;
