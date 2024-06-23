@@ -219,6 +219,9 @@ img {
     line-height: 150%;
     letter-spacing: 0.02em;
   }
+  .header-li {
+    padding-bottom: 0;
+  }
 }
 
 .header-contacts-link:hover,
@@ -305,23 +308,47 @@ img {
 
 /* Section 1 main ------------------------------------------------------------------------------------------------------------------------------*/
 
-.main-section {
-  background-color: #2e2f42;
+/* .main-section {
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/people-office.jpg);
-  color: #ffffff;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  margin: 0 auto;
-  max-width: 768px;
+} */
+
+@media screen and (-webkit-min-device-pixel-ratio),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+  .main-section {
+    background-color: #2e2f42;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/mobile-x2/hero2x.jpg);
+    color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    max-width: 768px;
+  }
 }
+
 @media screen and (min-width: 768px) {
   .main-section {
     padding: 112px 0;
+  }
+  @media screen and (-webkit-min-device-pixel-ratio),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .main-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/tab-x2/hero2x.jpg);
+    }
   }
 }
 
@@ -329,6 +356,17 @@ img {
   .main-section {
     padding: 188px 0 188px;
     max-width: 1440px;
+  }
+  @media screen and (-webkit-min-device-pixel-ratio),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .main-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/dt-2x/people-office2x.jpg);
+    }
   }
 }
 .main-tittle {
