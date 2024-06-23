@@ -951,9 +951,9 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  /* opacity: 1;
+  opacity: 1;
   visibility: hidden;
-  pointer-events: none; */
+  pointer-events: none;
 }
 
 .is-open {
